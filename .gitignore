@@ -1,2 +1,6 @@
 .rvmrc
+nanoc.yaml
+crash.log
+tmp
+output
 
