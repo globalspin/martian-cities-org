@@ -17,6 +17,10 @@ compile '/stylesheet/' do
   # don’t filter or layout
 end
 
+compile '/assets/*' do
+  # Don't filter assets yet
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -26,8 +30,8 @@ compile '*' do
   end
 end
 
-route '/stylesheet/' do
-  '/style.css'
+route '/assets/*' do
+  item.identifier.chop + '.' + item[:extension]
 end
 
 route '*' do

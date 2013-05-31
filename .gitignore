@@ -3,4 +3,5 @@ nanoc.yaml
 crash.log
 tmp
 output
+.DS_Store
 
