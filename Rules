@@ -17,9 +17,7 @@ compile '/stylesheet/' do
   # don’t filter or layout
 end
 
-compile '/assets/*' do
-  # Don't filter assets yet
-end
+passthrough '/assets/*'
 
 compile '*' do
   if item.binary?
@@ -28,10 +26,6 @@ compile '*' do
     filter :erb
     layout 'default'
   end
-end
-
-route '/assets/*' do
-  item.identifier.chop + '.' + item[:extension]
 end
 
 route '*' do
