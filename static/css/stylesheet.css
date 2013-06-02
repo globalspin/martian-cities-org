@@ -1,20 +1,291 @@
+/* use Roboto for navigation and button elements */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Regular-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Italic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Italic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Bold-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-BoldItalic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-BoldItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-BoldItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-BoldItalic-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Thin-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Thin-webfont.svg#RobotoThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-ThinItalic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Light-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Light-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-LightItalic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-LightItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-LightItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-LightItalic-webfont.svg#RobotoLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Medium-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Medium-webfont.svg#RobotoMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-MediumItalic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-MediumItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-MediumItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-MediumItalic-webfont.svg#RobotoMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-Black-webfont.eot');
+    src: url('/assets/webfonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-Black-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-Black-webfont.svg#RobotoBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/webfonts/Roboto-BlackItalic-webfont.eot');
+    src: url('/assets/webfonts/Roboto-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Roboto-BlackItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Roboto-BlackItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Roboto-BlackItalic-webfont.svg#RobotoBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Use Alegreya (and the small-caps variant) for all other text */
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-Regular-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-Regular-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-Regular-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-Regular-webfont.svg#AlegreyaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-Italic-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-Italic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-Italic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-Bold-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-Bold-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-Bold-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-Bold-webfont.svg#AlegreyaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-BoldItalic-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-BoldItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-BoldItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-BoldItalic-webfont.svg#AlegreyaBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-Black-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-Black-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-Black-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-Black-webfont.svg#AlegreyaBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/webfonts/Alegreya-BlackItalic-webfont.eot');
+    src: url('/assets/webfonts/Alegreya-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/Alegreya-BlackItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/Alegreya-BlackItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/Alegreya-BlackItalic-webfont.svg#AlegreyaBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-Regular-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-Regular-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-Regular-webfont.svg#AlegreyaSCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-Italic-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-Italic-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-Italic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-Italic-webfont.svg#AlegreyaSCItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-Bold-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-Bold-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-Bold-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-Bold-webfont.svg#AlegreyaSCBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-BoldItalic-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-BoldItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-BoldItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-BoldItalic-webfont.svg#AlegreyaSCBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-Black-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-Black-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-Black-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-Black-webfont.svg#AlegreyaSCBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlegreyaSC';
+    src: url('/assets/webfonts/AlegreyaSC-BlackItalic-webfont.eot');
+    src: url('/assets/webfonts/AlegreyaSC-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/AlegreyaSC-BlackItalic-webfont.woff') format('woff'),
+         url('/assets/webfonts/AlegreyaSC-BlackItalic-webfont.ttf') format('truetype'),
+         url('/assets/webfonts/AlegreyaSC-BlackItalic-webfont.svg#AlegreyaSCBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
 
 body {
   padding-top: 60px;
   padding-bottom: 40px;
+  font-family: "Alegreya", Georgia, "Times New Roman", Times, serif;
 }
 
 div.navbar {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: "AlegreyaSC", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  /* font-variant: small-caps; */
 }
 
 .btn {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar .brand {
