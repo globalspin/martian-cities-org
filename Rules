@@ -13,11 +13,12 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don’t filter or layout
-end
-
 passthrough '/assets/*'
+
+compile '/patterns/*' do
+  filter :erb
+  layout 'pattern'
+end
 
 compile '*' do
   if item.binary?
