@@ -7,7 +7,9 @@ title: Patterns
 
   <div class="span12">
   <ul>
-  <li><a href="/patterns/your-own-home/">Your Own Home</a></li>
+  <% patterns.each do |pattern| %>
+  <li><%= link_to(pattern[:title], pattern) %></li>
+  <% end %>
   </ul>
   </div>
   
