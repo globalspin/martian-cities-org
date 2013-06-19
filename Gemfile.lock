@@ -20,6 +20,7 @@ GEM
       ruby-hmac
     formatador (0.2.4)
     json (1.8.0)
+    kramdown (1.0.2)
     mime-types (1.23)
     multi_json (1.7.3)
     nanoc (3.6.3)
@@ -37,5 +38,6 @@ PLATFORMS
 DEPENDENCIES
   adsf
   fog
+  kramdown
   multi_json
   nanoc

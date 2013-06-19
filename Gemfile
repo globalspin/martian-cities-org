@@ -10,3 +10,5 @@ gem 'adsf'
 # Fog deploys the site content to an Amazon S3 bucket
 gem 'fog'
 
+# Some pages are written in Markdown
+gem 'kramdown'

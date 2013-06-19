@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @item[:title] %> - an article about Martian Cities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A vision for livable cities on Mars.">
+    <meta name="author" content="Chris Radcliff">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
+  </head>
+  <body>
+    <div class="navbar navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Martian Cities</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/patterns/">Patterns</a></li>
+              <li><a href="/designs/">Designs</a></li>
+              <li class="active"><a href="/articles/">Articles</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="/contribute/">Contribute</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="container">
+      <div class="page-header">
+        <h1><%= @item[:title] %><% if @item[:subtitle] %>
+          <small><%= @item[:subtitle] %></small>
+        <% end %></h1>
+      </div>
+          
+      <%= yield %>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2013 <a href="http://about.me/chris_radcliff">Chris Radcliff</a>. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</p>
+      </footer>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+  </body>
+</html>

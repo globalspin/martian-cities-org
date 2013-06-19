@@ -20,6 +20,11 @@ compile '/patterns/*' do
   layout 'pattern'
 end
 
+compile '/articles/*' do
+  filter :kramdown
+  layout 'article'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
