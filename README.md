@@ -5,6 +5,23 @@ Content and publishing for martiancities.org, a repository of city form patterns
 
 This site is a work-in-progress, intended for development over at least a decade, starting in 2013.
 
+The source content and compiled output of this site are provided under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+
+## Site sections
+
+### Patterns
+
+Design patterns are the core of this document. A pattern isn't a design or a normative statement; it's a description of some common idea that has been seen as successful in human cities.
+
+### Designs
+
+Reference designs illustrate how the patterns are used to inform the city design process. These designs should be sketches rather than plans, evocative and inspirational rather than prescriptive.
+
+### Articles
+
+Each article explores an aspect of Martian city design. The articles may feature reference designs or patterns, but they may also present related ideas or design challenges.
+
+
 ## Contributing
 
 To contribute a pattern, article, or reference design:
@@ -34,19 +51,4 @@ To compile a copy of the site for your own use:
 5. Start a local web server with the compiled content:
     nanoc view
 6. Visit http://localhost:3000/ in a browser to view the local content.
-
-## Site sections
-
-### Patterns
-
-Design patterns are the core of this document. A pattern isn't a design or a normative statement; it's a description of some common idea that has been seen as successful in human cities.
-
-### Designs
-
-Reference designs illustrate how the patterns are used to inform the city design process. These designs should be sketches rather than plans, evocative and inspirational rather than prescriptive.
-
-### Articles
-
-Each article explores an aspect of Martian city design. The articles may feature reference designs or patterns, but they may also present related ideas or design challenges.
-
 
