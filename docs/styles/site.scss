@@ -7,3 +7,12 @@
 body {
   padding-top: 50px;
 }
+
+.lead {
+  color: $martian-redgray;
+  font-family: $font-family-sans-special;
+}
+
+.navbar-brand {
+  font-family: $headings-font-family;
+}

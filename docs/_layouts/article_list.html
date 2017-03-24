@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Articles</h1>
   
   {{ content }}
 
@@ -13,10 +13,9 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> 
-          {{ post.synopsis | escape }}
-        </h2>
+        <h2><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          
+        <p class="lead">{{ post.synopsis | escape }}</p>
       </li>
     {% endfor %}
   </ul>

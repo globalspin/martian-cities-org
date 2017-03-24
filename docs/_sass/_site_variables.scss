@@ -1,9 +1,22 @@
-$font-size-base: 16px;
+$font-size-base: 18px;
 $headings-font-weight: 600;
 $blockquote-font-size: $font-size-base;
 
+$martian-black: #120b05;
+$martian-brown: #684420;
+$martian-redbrown: #815e38;
+$martian-redgray: #a19588;
+
 $font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-sans-special:  "Roboto", Helvetica, Arial, sans-serif !default;
 
 $headings-font-family:    "Roboto Condensed", Helvetica, Arial, sans-serif !default;
+$headings-color: $martian-redbrown;
+
+$text-color: $martian-black;
+
+$navbar-inverse-bg: $martian-black;
+
+$navbar-default-brand-color: $headings-color;
 
 @import "bootstrap/variables";
